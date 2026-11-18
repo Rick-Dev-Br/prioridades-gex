@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://p.trellocdn.com; style-src 'self' https://p.trellocdn.com 'unsafe-inline'; img-src 'self' data: https://p.trellocdn.com; connect-src https:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Prioridades</title>
+  <link rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+  <script type="module" src="js/settings.js"></script>
+</head>
+<body>
+  <main id="conteudo" class="conteudo">
+    <p>Clique no nome para alterar. Vale para todos os cartões deste quadro.</p>
+
+    <div id="nomes">
+      <label class="linha"><span>1</span><input class="nivel nivel-1" maxlength="30" aria-label="Nome da prioridade 1"></label>
+      <label class="linha"><span>2</span><input class="nivel nivel-2" maxlength="30" aria-label="Nome da prioridade 2"></label>
+      <label class="linha"><span>3</span><input class="nivel nivel-3" maxlength="30" aria-label="Nome da prioridade 3"></label>
+      <label class="linha"><span>4</span><input class="nivel nivel-4" maxlength="30" aria-label="Nome da prioridade 4"></label>
+      <label class="linha"><span>5</span><input class="nivel nivel-5" maxlength="30" aria-label="Nome da prioridade 5"></label>
+    </div>
+
+    <label class="opcao"><input type="checkbox" id="frente"> Mostrar a prioridade na frente do cartão</label>
+    <label class="opcao"><input type="checkbox" id="verso"> Mostrar a prioridade no verso do cartão</label>
+    <label class="opcao"><input type="checkbox" id="soAltasNaFrente"> Na frente, mostrar só as prioridades 1 e 2</label>
+
+    <button id="salvar" type="button" class="mod-primary largura-toda">Salvar</button>
+    <p id="erro" class="erro" role="alert" hidden></p>
+  </main>
+</body>
+</html>

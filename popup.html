@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://p.trellocdn.com; style-src 'self' https://p.trellocdn.com 'unsafe-inline'; img-src 'self' data: https://p.trellocdn.com; connect-src https:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Prioridade do cartão</title>
+  <link rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+  <script type="module" src="js/popup.js"></script>
+</head>
+<body>
+  <main id="conteudo" class="conteudo">
+    <p>Escolha a prioridade deste cartão. Os nomes podem ser alterados nas configurações do Power-Up.</p>
+    <p id="atual" class="atual"></p>
+    <div id="niveis"></div>
+    <button id="remover" type="button" class="largura-toda" hidden>Remover prioridade</button>
+    <p id="erro" class="erro" role="alert" hidden></p>
+  </main>
+</body>
+</html>

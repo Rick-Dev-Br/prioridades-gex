@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <!--
+    Só roda script nosso e o da biblioteca oficial do Trello.
+    connect-src https: a própria biblioteca do Trello chama serviços da Atlassian; listar domínio a domínio
+    quebraria quando eles mudarem. O nosso código não faz nenhuma requisição.
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://p.trellocdn.com; style-src 'self' https://p.trellocdn.com 'unsafe-inline'; img-src 'self' data: https://p.trellocdn.com; connect-src https:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Prioridades Gex</title>
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+  <script type="module" src="js/client.js"></script>
+</head>
+<body></body>
+</html>
